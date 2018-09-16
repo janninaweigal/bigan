@@ -1,6 +1,8 @@
 {
   "pages":[
+    "pages/login/identity/identity",
     "pages/login/login"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,0 +1,11 @@
+<view class="identitybox">
+  <view class="bg-column identity-item">
+    <image mode='aspectFit' class="identity-img" src=""></image>
+    <text class="identity-user">我是甲方</text>
+  </view>
+  <view class="bg-column identity-item">
+    <image mode='aspectFit' class="identity-img" src=""></image>
+    <text class="identity-user">我是笔杆</text>
+  </view>
+</view>
+<view class="identity-exit">退出登录</view>

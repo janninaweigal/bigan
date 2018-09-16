@@ -1,2 +1,20 @@
-<!--pages/login/login.wxml-->
-<text>pages/login/login.wxml</text>
+<view class="container">
+  <view class="bg-column bg-top">
+    <text class="bg-h1">金笔杆app</text>
+    <text class="bg-h5">共享知识 共享人才</text>
+  </view>
+  <form bindsubmit="formSubmit" class="bg-input">
+    <view class="bg-row bg-input-item">
+      <view class="input-item-left">+86</view>
+      <view class="blank-line"></view>
+      <input type='number' name="phone" maxlength='11' placeholder='请输入您的手机号'></input>
+    </view>
+    <view class="bg-row bg-input-item">
+      <image mode='aspectFit' class="input-item-left" src="/images/active.png"></image>
+      <view class="blank-line"></view>
+      <input type="text" maxlength='5' name="code" placeholder='验证码'></input>
+      <view class="activebtn" catchtap='catchcode'>{{code==undefined||code==null?'获取验证码':code}}</view>
+    </view>
+    <button formType="submit" class="bg-input-item sumitbox">进 入</button>
+  </form>
+</view>

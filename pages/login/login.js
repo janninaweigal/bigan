@@ -1,4 +1,4 @@
-// pages/login/login.js
+var num=60;
 Page({
 
   /**
@@ -14,7 +14,26 @@ Page({
   onLoad: function (options) {
 
   },
-
+  catchcode(){
+    var that=this;
+    var code=this.data.code;
+    if(code==null||code==undefined){
+      var i=setInterval(function(){
+        if(num==0){
+          num=60;
+          clearInterval(i);
+          that.setData({
+            code:null
+          })
+        }else{
+          --num;
+          that.setData({
+            code: '倒计时: ' +num
+          })
+        }
+      },1000);
+    }
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

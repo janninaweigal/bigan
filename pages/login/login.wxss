@@ -1,1 +1,53 @@
-/* pages/login/login.wxss */
+.bg-top{
+  margin-top:125rpx;
+  margin-bottom:12px;
+}
+.bg-h1{
+  font-weight:bold;
+  font-size:34px;
+}
+.bg-h5{
+  font-weight:bolder;
+  margin-top:8px;
+  font-size:12px;
+}
+.bg-input{
+  width:100%;
+  margin-top:20px;
+}
+.bg-input-item{
+  background-color:#D7D7D7;
+  color:#000;
+  margin:18px 0px;
+  padding:5px 15px;
+  border-radius:20px;
+  font-size:25rpx;
+}
+.input-item-left{
+  width:15px;
+  height:15px;
+  line-height:15px;
+  padding-left:10px;
+  padding-right:15px;
+}
+.blank-line{
+  width:1px;
+  height:10px;
+  line-height:10px;
+  background-color:#3A3A3A;
+}
+.bg-input-item input{
+  flex:1;
+  padding:2px 10px;
+}
+.bg-input-item .activebtn{
+  border-radius:15px;
+  padding:2px 5px;
+  color:#fff;
+  border:1px solid #fff;
+}
+.sumitbox{
+  margin-top:45px;
+  font-size:32rpx;
+}
+.sumitbox::after{ border: none;}
