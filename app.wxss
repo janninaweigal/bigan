@@ -3,6 +3,7 @@ page{
   height:100%;
   font-family:"微软雅黑";
   background-color:#F2F2F2;
+  font-size:14px;
 }
 .container{
   width:100%;
@@ -11,7 +12,7 @@ page{
   justify-content:center;
   align-items:center;
   box-sizing:border-box;
-  padding:10px 15px;
+  padding:0px 15px;
 }
 .bg-row{
   display:flex;
@@ -24,4 +25,73 @@ page{
   flex-direction: column;
   justify-content:center;
   align-items:center;
+}
+.bg-width{
+  width:100%;
+}
+/* 新增 修改 */
+.infocontainer{
+  width:100%;
+  background-color:#fff;
+  color:#000;
+}
+.info-item{
+  width:100%;
+  padding:10px 0px;
+}
+/* 保存 */
+.submitbtn{
+  margin:10px 15px;
+}
+.middle{
+  margin:10px 0px;
+  padding:0px 15px;
+  box-sizing:border-box;
+}
+/* 工作经历，笔杆专业技能 */
+.item-left{
+  white-space: nowrap;
+}
+.bg-item-textarea{
+  margin-left:5px;
+  border-radius:5px;
+  box-sizing:border-box;
+  padding:10px;
+}
+/* 徽章 */
+.badgecontainer{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items:center;
+  flex-wrap:wrap;
+  margin:10px 0px;
+  padding:0px 15px;
+  box-sizing:border-box;
+}
+.badge-btn{
+  border-radius:10px;
+  padding:3px 25px;
+  white-space: nowrap;
+  background-color:#D7D7D7;
+  color:#000;
+  font-size:11px;
+  margin-bottom:10px;
+}
+/* 附件 */
+.attchContainer{
+  box-sizing:border-box;
+  padding:5rpx 80rpx;
+}
+.attchbox{
+  background-color:#D7D7D7;
+  color:#000;
+  margin:15px 0px;
+  padding:10px 15px;
+  border-radius:8px;
+  font-size:25rpx;
+  text-align:center;
+}
+.attchtext{
+  color:#D7D7D7;
 }

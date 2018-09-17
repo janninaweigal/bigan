@@ -1,13 +1,21 @@
 {
   "pages":[
+    "pages/second/works/works",
+    "pages/second/skill/skill",
+    "pages/second/work/work",
+    "pages/second/add/add",
+    "pages/second/edit/edit",
+    "pages/first/first",
     "pages/login/identity/identity",
-    "pages/login/login"
+    "pages/login/login",
+    
+    "pages/second/second"
     
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "金笔杆",
     "navigationBarTextStyle":"black"
   }
 }

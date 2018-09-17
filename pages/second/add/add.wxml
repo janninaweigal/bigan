@@ -1,0 +1,39 @@
+<form bindsubmit="formSubmit">
+  <view class="container infocontainer">
+    <view class="bg-row info-item">
+      <text>学校 :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入您的昵称'></input>
+    </view>
+    <view class="bg-row info-item">
+      <text>专业（一） :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入您的手机号'></input>
+    </view>
+    <view class="bg-row info-item">
+      <text>专业（二） :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入您的昵称'></input>
+    </view>
+    <view class="bg-row info-item">
+      <text>学历 :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入您的性别'></input>
+    </view>
+    <view class="bg-row info-item">
+      <text>在校时间 :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入您的手机号'></input>
+    </view>
+    <view class="bg-row info-item">
+      <text>签名 :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入您的年龄'></input>
+    </view>
+  </view>
+  <view class="infocontainer middle">
+    <view class="bg-row info-item">
+      <text>附件名称 :</text>
+      <text class="attchtext">请上传jpg格式</text>
+    </view>
+  </view>
+  <view class="attchContainer infocontainer">
+    <view class="attchbox">上传附件</view>
+    <view class="attchbox">删除附件</view>
+  </view>
+  <button formType="submit" type="primary" class="submitbtn">保 存</button>
+</form>

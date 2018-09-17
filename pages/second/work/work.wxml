@@ -1,0 +1,27 @@
+<form bindsubmit="formSubmit">
+  <view class="container infocontainer">
+    <view class="bg-row info-item">
+      <text>公司名称 :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入您的公司名称'></input>
+    </view>
+    <view class="bg-row info-item">
+      <text>职务 :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入您的职务'></input>
+    </view>
+  </view>
+  <view class="infocontainer middle">
+    <view class="bg-row info-item">
+      <text>入职时间 :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入您的入职时间'></input>
+    </view>
+    <view class="bg-row info-item">
+      <text>离职时间 :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入您的离职时间'></input>
+    </view>
+    <view class="bg-row info-item">
+      <text class="item-left">工作内容 :</text>
+      <textarea class="bg-item-textarea" maxlength='150' placeholder='(该处为限制字符文本框)'></textarea>
+    </view>
+  </view>
+  <button formType="submit" type="primary" class="submitbtn">完 成</button>
+</form>

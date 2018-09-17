@@ -1,0 +1,20 @@
+<form bindsubmit="formSubmit">
+  <view class="container infocontainer">
+    <view class="bg-row info-item">
+      <text>新增标签 :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入标签'></input>
+    </view>
+  </view>
+  <view class="infocontainer middle">
+    <view class="bg-row info-item">
+      <text class="item-left">说明 :</text>
+      <textarea class="bg-item-textarea" maxlength='150' placeholder='(该处为限制字符文本框)'></textarea>
+    </view>
+  </view>
+  <view class="badgecontainer">
+    <block wx:for="{{[1,2,3,4,5,6,7,8]}}" wx:key="{{item}}">
+        <view class="badge-btn">技能{{item}}</view>
+    </block>
+  </view>
+  <button formType="submit" type="primary" class="submitbtn">完 成</button>
+</form>

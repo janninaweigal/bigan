@@ -1,0 +1,41 @@
+<form bindsubmit="formSubmit">
+  <view class="container editcontainer">
+    <view class="bg-row info-item">
+      <text>笔杆头像</text>
+      <image mode='aspectFit' class="avatar-img" src=""></image>
+    </view>
+    <view class="bg-row info-item">
+      <text>真实姓名 :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入您的手机号'></input>
+    </view>
+    <view class="bg-row info-item">
+      <text>昵称 :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入您的昵称'></input>
+    </view>
+    <view class="bg-row info-item">
+      <text>性别 :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入您的性别'></input>
+    </view>
+    <view class="bg-row info-item">
+      <text>年龄 :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入您的手机号'></input>
+    </view>
+    <view class="bg-row info-item">
+      <text>所有城市 :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入您的年龄'></input>
+    </view>
+    <view class="bg-row info-item">
+      <text>手机号码 :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入您的手机号码'></input>
+    </view>
+    <view class="bg-row info-item">
+      <text>常用邮箱 :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入您的常用邮箱'></input>
+    </view>
+    <view class="bg-row info-item">
+      <text>实名认证 :</text>
+      <text>{{'>'}}</text>
+    </view>
+  </view>
+  <button formType="submit" type="primary" class="submitbtn">保 存</button>
+</form>
