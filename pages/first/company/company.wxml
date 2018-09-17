@@ -1,0 +1,31 @@
+<form bindsubmit="formSubmit">
+  <view class="container infocontainer">
+    <view class="bg-row info-item">
+      <text>公司名称 :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入您的公司名称'></input>
+    </view>
+    <view class="bg-row info-item">
+      <text>职务 :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入您的职务'></input>
+    </view>
+    <view class="bg-row info-item">
+      <text>所在行业 :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入您的所在行业'></input>
+    </view>
+    <view class="bg-row info-item">
+      <text>企业所在地 :</text>
+      <input type='text' name="name" maxlength='11' placeholder='请输入您的企业所在地'></input>
+    </view>
+  </view>
+  <view class="infocontainer middle">
+    <view class="bg-row info-item">
+      <text>附件名称 :</text>
+      <text class="attchtext">请上传jpg格式</text>
+    </view>
+  </view>
+  <view class="attchContainer infocontainer">
+    <view class="attchbox">上传附件</view>
+    <view class="attchbox">删除附件</view>
+  </view>
+  <button formType="submit" type="primary" class="submitbtn">完 成</button>
+</form>

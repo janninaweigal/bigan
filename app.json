@@ -1,21 +1,27 @@
 {
-  "pages":[
+  "pages": [
+    "pages/second/index/index",
+    "pages/second/second",
+    "pages/first/info/info",
+    "pages/first/company/company",
+    "pages/first/first",
+   
+    "pages/second/attch/attch",
     "pages/second/works/works",
-    "pages/second/skill/skill",
     "pages/second/work/work",
+    
+    "pages/second/skill/skill",
+
     "pages/second/add/add",
     "pages/second/edit/edit",
-    "pages/first/first",
+
     "pages/login/identity/identity",
-    "pages/login/login",
-    
-    "pages/second/second"
-    
+    "pages/login/login"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "金笔杆",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   }
 }
