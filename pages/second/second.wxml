@@ -1,2 +1,12 @@
-<!--pages/second/second.wxml-->
-<text>pages/second/second.wxml</text>
+<form bindsubmit="formSubmit">
+  <view class="bg-column-center ownContainer">
+    <image mode='aspectFit' class="attchicon" src=""></image>
+    <text class="attach-text">完善基本信息</text>
+  </view>
+  <view class="bg-column-center linebox">教育背景+</view>
+  <view class="bg-column-center linebox">工作经历+</view>
+  <view class="bg-column-center linebox">专业技能+</view>
+  <view class="bg-column-center linebox">作品展示+</view>
+  <view class="bg-column-center linebox">自我评价+</view>
+  <button formType="submit" type="primary" class="submitbtn">完 成</button>
+</form>

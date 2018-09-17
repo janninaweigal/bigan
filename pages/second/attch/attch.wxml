@@ -1,0 +1,7 @@
+<form bindsubmit="formSubmit">
+  <view class="bg-column-center attachContainer">
+    <image mode='aspectFit' class="attchicon" src="/images/attach.png"></image>
+    <text class="attach-text">请点击上传附件</text>
+  </view>
+  <button formType="submit" type="primary" class="submitbtn">完 成</button>
+</form>

@@ -6,9 +6,9 @@
     </view>
   </view>
   <view class="infocontainer middle">
-    <view class="bg-row info-item">
+    <view class="bg-textarea info-item">
       <text class="item-left">文字说明 :</text>
-      <textarea class="bg-item-textarea" maxlength='150' placeholder='文字说明'></textarea>
+      <textarea class="bg-item-textarea" maxlength='150' placeholder=''></textarea>
     </view>
   </view>
   <view class="infocontainer middle">

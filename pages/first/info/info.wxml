@@ -1,16 +1,15 @@
 <form bindsubmit="formSubmit">
   <view class="container infocontainer">
     <view class="bg-row info-item">
-      <text>笔杆头像</text>
-      <image mode='aspectFit' class="avatar-img" src=""></image>
+      <view class="bg-row">
+        <text>甲方头像</text>
+        <image mode='aspectFit' class="avatar-img" src=""></image>
+      </view> 
+      <image mode='aspectFit' class="arrow-right" src="/images/arrow-right.png"></image>
     </view>
     <view class="bg-row info-item">
       <text>真实姓名 :</text>
       <input type='text' name="name" maxlength='11' placeholder='请输入您的手机号'></input>
-    </view>
-    <view class="bg-row info-item">
-      <text>昵称 :</text>
-      <input type='text' name="name" maxlength='11' placeholder='请输入您的昵称'></input>
     </view>
     <view class="bg-row info-item">
       <text>性别 :</text>

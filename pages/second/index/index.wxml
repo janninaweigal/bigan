@@ -1,0 +1,100 @@
+<view class="indexContainer" wx:if="{{index==1}}">
+  <view class="bannerContainter">
+    <swiper catchtap="onSwiperTap" vertical="{{false}}" indicator-dots="true" autoplay="true" interval="5000">
+      <swiper-item>
+          <image mode='aspectFill' src="/images/wx.png" data-postId="3"></image>
+      </swiper-item>
+      <swiper-item>
+          <image mode='aspectFill' src="/images/vr.png" data-postId="4"></image>
+      </swiper-item>
+      <swiper-item>
+          <image mode='aspectFill' src="/images/iqiyi.png" data-postId="5"></image>
+      </swiper-item>
+    </swiper>
+
+    <view class="searchkeyword bg-row-center" wx:if="{{sflag}}" catchtap='appearsearch'>
+      <icon type='search' size='18'></icon>
+      <text class="searchtext">搜索点什么吧</text>
+    </view>
+    <view class="searchkeyword bg-row-center" wx:else>
+        <input type="text" class="inputsearch" maxlength='50' placeholder='搜索点什么吧'></input>
+        <icon type='clear' size='24' class="searchclear" catchtap='clearsearch'></icon>
+    </view>
+  </view>
+
+  <view class="newcontainer">
+    <image mode='aspectFill' src="/images/new.png" class="newimg"></image>
+    <swiper class="new-swiper" vertical="true"  circular="true" interval="2500" duration="1000" autoplay='{{true}}' display-multiple-items='1'>
+      <block wx:for="{{[1,2,3,4]}}" wx:key="{{index}}">
+        <swiper-item>
+          <view class="bg-row-left">
+            <text class="newtitle">新闻</text>
+            <text class="newcontent">内容内容内容内容内容内容内容内容内容内2容内容内容内3容内容内容{{index}}</text>
+          </view>
+          <view class="bg-row-left">
+            <text class="newtitle">头条</text>
+            <text class="newcontent">内容内容内容内容内容{{index}}</text>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="bg-row middletab">
+    <view class="tab-item3">热门推荐</view>
+    <view class="tab-item3">极单推荐</view>
+    <view class="tab-item3">高薪推荐</view>
+  </view>
+
+  <view class="demandtab">
+    <view class="bg-row demandbox">
+      <text>UI 需求</text>
+      <view class="bg-row" catchtap='demandtap'>
+        <block wx:for="{{demand}}" wx:key="{{index}}">
+          <text class="demand-tab-right {{item.checked?'demand-tab-active':''}}" data-text="{{item.text}}">{{item.text}}</text>
+        </block>
+      </view>
+    </view>
+  </view>
+  
+  <block wx:for="{{[1,2]}}" wx:key="{{index}}">
+    <view class="demand-item">
+      <view class="bg-row">
+        <text class="demand-title">甲方需求标题</text>
+        <text class="demand-price">金额</text>
+      </view>
+      <view class="bg-row">
+        <text class="demand-label">甲方需求小标签</text>
+        <text class="demand-time">2018-09-16 00:00:00</text>
+      </view>
+      <view class="demand-content">
+        内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+      </view>
+      <view class="bg-row-left">
+        <image mode='aspectFill' src="/images/new.png" class="demand-bottomimg"></image>
+        <view class="bg-column-left bg-margin-left">
+          <text>甲方名称 (企业加注企业标)</text>
+          <text>甲方名称 (企业加注企业标)</text>
+        </view>
+      </view>
+    </view>
+  </block>
+
+</view>
+
+<view class="" wx:if="{{index==2}}">
+  <view>2</view>
+</view>
+
+<view class="" wx:if="{{index==3}}">
+  <view>3</view>
+</view>
+
+<view class="bg-fixed-bottom-tab" catchtap='selecttab'>
+  <text class="tab-item3 {{index==1?'tab-active':''}}" data-id="1">首页</text>
+  <text class="tab-item3 {{index==2?'tab-active tab-rela':'tab-rela'}}" data-id="2">
+    <text>消息</text>
+    <text class="item-top-right">175</text>
+  </text>
+  <text class="tab-item3 {{index==3?'tab-active':''}}" data-id="3">我的</text>
+</view>

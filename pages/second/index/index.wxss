@@ -1,0 +1,141 @@
+.indexContainer{
+  width:100%;
+  margin-bottom:55px;
+}
+.bannerContainter{
+  width:100%;
+  height:300rpx;
+  background-color:#D7D7D7;
+  position:relative;
+}
+.bannerContainter image{
+  width:100%;
+  height:300rpx;
+ }
+.bannerContainter .searchkeyword{
+  position:absolute;
+  top:5px;
+  left:10%;
+  width:80%;
+  background-color:#fff;
+  color:#D7D7D7;
+  border-radius:15px;
+  height:2rem;
+  min-height:2rem;
+}
+.bannerContainter .searchtext{
+  margin-left:10px;
+}
+.bannerContainter .inputsearch{
+  width:75%;
+}
+.bannerContainter .searchclear{
+  z-index:999;
+  position:absolute;
+  top:50%;
+  margin-top:-12px;
+  right:35px;
+}
+/* 新闻 */
+.newcontainer{
+  width:100%;
+  box-sizing:border-box;
+  padding:10px 15px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  background-color:#fff;
+}
+.newimg{
+  width:60rpx;
+  height:60rpx;
+}
+.new-swiper{
+  flex:1;
+  height:80rpx;
+  padding:4px 15px;
+}
+.bg-row-left .newtitle{
+  white-space: nowrap;
+}
+.bg-row-left .newcontent{
+  margin-left:15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* 选项卡 */
+.middletab{
+  width:100%;
+  margin:10px 0px;
+  padding:35px 0px;
+  font-size:16px;
+  background-color:#fff;
+}
+.middletab .tab-item3{
+  border-right:1px solid #000;
+}
+.middletab .tab-item3:last-child{
+  border-right:none;
+}
+/* 需求 */
+.demandtab{
+  background-color:#fff;
+  width:100%;
+  padding:0px 15px;
+  font-size:18px;
+  box-sizing: border-box;
+}
+.demandbox{
+  padding:15px 0px;
+  box-sizing: border-box;
+  border-bottom:2px solid #ccc;
+}
+.demand-tab-right{
+  padding:5px;
+  margin:0px 8px;
+}
+.demandbox .demand-tab-active{
+  font-weight:bolder;
+   border-bottom:1px solid #000;
+}
+/* 甲方需求 子容器 */
+.demand-item{
+  width:100%;
+  margin-bottom:10px;
+  padding:15px 10px;
+  box-sizing: border-box;
+  background-color:#fff;
+}
+.demand-bottomimg{
+  width:30px;
+  height:30px;
+}
+.bg-margin-left{
+  margin-left:15px;
+}
+/* 需求字体 */
+.demand-item .demand-title{
+  font-size:18px;
+}
+.demand-item .demand-price{
+  font-size:14px;
+}
+.demand-item .demand-label{
+  font-size:12px;
+  color:#727272;
+}
+.demand-item .demand-time{
+  font-size:12px;
+  color:#CBCBCB;
+}
+.demand-item .demand-content{
+  width:100%;
+  margin-top:6px;
+  margin-bottom:5px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
