@@ -26,6 +26,12 @@ page{
   justify-content:flex-start;
   align-items:center;
 }
+.bg-row-right{
+  display:flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  align-items:center;
+}
 .bg-row-center{
   display:flex;
   flex-direction: row;
@@ -65,10 +71,6 @@ page{
   position:fixed;
   bottom:0px;
   left:0px;
-  /* display:flex;
-  flex-direction:row;
-  justify-content:space-around;
-  align-items: center; */
   box-sizing:border-box;
   padding:10px 0px;
   font-size:16px;
@@ -196,3 +198,68 @@ page{
 .attchtext{
   color:#D7D7D7;
 }
+
+/* 需求 */
+.demandtab{
+  background-color:#fff;
+  width:100%;
+  padding:0px 15px;
+  font-size:18px;
+  box-sizing: border-box;
+}
+.demandbox{
+  padding:15px 0px;
+  box-sizing: border-box;
+  border-bottom:2px solid #ccc;
+}
+.demand-tab-right{
+  padding:5px 0px;
+  text-align:center;
+  margin:0px 8px;
+  white-space:nowrap;
+}
+.demandbox .demand-tab-active{
+  font-weight:bolder;
+   border-bottom:1px solid #000;
+}
+/* 甲方需求 子容器 */
+.demand-item{
+  width:100%;
+  margin-top:10px;
+  padding:15px 10px;
+  box-sizing: border-box;
+  background-color:#fff;
+}
+.demand-bottomimg{
+  width:30px;
+  height:30px;
+}
+.bg-margin-left{
+  margin-left:15px;
+}
+/* 需求字体 */
+.demand-item .demand-title{
+  font-size:18px;
+}
+.demand-item .demand-price{
+  font-size:14px;
+}
+.demand-item .demand-label{
+  font-size:12px;
+  color:#727272;
+}
+.demand-item .demand-time{
+  font-size:12px;
+  color:#CBCBCB;
+}
+.demand-item .demand-content{
+  width:100%;
+  margin-top:6px;
+  margin-bottom:5px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+

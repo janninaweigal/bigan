@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    index:1,
+    index:3,
     demand:[{
       text:'推荐',
       checked:true
@@ -23,12 +23,21 @@ Page({
       switch(id){
         case '1':
           that.designIndex(1);
+          wx.setNavigationBarTitle({
+            title: '首页'
+          })
           break;
         case '2':
           that.designIndex(2);
+          wx.setNavigationBarTitle({
+            title: '消息'
+          })
           break;
         case '3':
           that.designIndex(3);
+          wx.setNavigationBarTitle({
+            title: '我的'
+          })
           break;
         default:
           console.log("none")

@@ -1,0 +1,80 @@
+.nick-num{
+  width:100%;
+  display:flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  align-items:flex-end;
+  box-sizing:border-box;
+  padding-top:150rpx;
+  padding-right:10px;
+  position:relative;
+  /* background: url('../../../images/iqiyi.png') no-repeat;
+  background-size: 100% 100%; */
+  background-color: rgba(0,0,0,.2);
+  font-size:14px;
+}
+.nick-num .bg-column{
+  margin:0px 5px;
+}
+.nick-num .avatarimg{
+  position:absolute;
+  bottom:-40px;
+  left:10px;
+  width:80px;
+  height:80px;
+  border-radius:50%;
+}
+/* 下面的标签 */
+.aptitude{
+  width:100%;
+  padding-top:40px;
+  padding-bottom:20px;
+  padding-left:20px;
+  padding-right:20px;
+  box-sizing:border-box;
+  background-color:#fff;
+}
+.aptitude .badge-icon{
+  display:inline-block;
+  padding:5px 7px;
+  background-color:#D7D7D7;
+  color:#fff;
+  margin-top:5px;
+  margin-right:5px;
+  border-radius:5px;
+  font-size:10px;
+}
+/* 授权 */
+.authbox{
+  width:100%;
+  margin:10px 0px;
+  padding-left:20px;
+  box-sizing:border-box;
+  background-color:#fff;
+}
+.authbox .auth-item{
+  padding:5px 0px;
+}
+.authbox .authimg{
+  width:25px;
+  height:25px;
+}
+.auth-item .margin-auto{
+  margin:0px 10px;
+}
+.auth-item .authtext{
+  color:#bbb;
+  font-size:14px;
+}
+
+/* 需求 */
+.demandcontainer{
+  box-sizing:border-box;
+  background-color:#fff;
+  padding:10px;
+  border-bottom:1px solid #bbb;
+}
+.demandcontainer .demand-tab-active{
+  font-weight:bolder;
+   border-bottom:1px solid #000;
+}

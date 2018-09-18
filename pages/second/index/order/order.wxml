@@ -1,0 +1,34 @@
+<import src="../../../template/demand/demand.wxml" />
+<import src="../../../template/tabbar/tabbar.wxml" />
+<view class="bg-row demandcontainer" catchtap='demandtap'>
+  <block wx:for="{{tabar}}" wx:for-item="item" wx:key="{{index}}">
+    <template is="tabbar" data="{{...item}}"/>
+  </block>
+</view>
+
+<view wx:if="{{tabar[0].checked}}">
+  <block wx:for="{{postList}}" wx:for-item="item" wx:key="{{index}}">
+    <template is="demand" data="{{...item}}"/>
+    <view class="order-bottom">
+      <text class="order-bottom-btn">申述</text>
+      <text class="order-bottom-btn">上传作品</text>
+      <text class="order-bottom-btn">提交审核</text>
+    </view>
+  </block>
+</view>
+
+<view wx:if="{{tabar[1].checked}}">
+  待付款
+</view>
+
+<view wx:if="{{tabar[2].checked}}">
+  交易中
+</view>
+
+<view wx:if="{{tabar[3].checked}}">
+  待评价
+</view>
+
+<view wx:if="{{tabar[4].checked}}">
+  退款
+</view>

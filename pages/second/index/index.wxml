@@ -1,6 +1,6 @@
 <view class="indexContainer" wx:if="{{index==1}}">
   <view class="bannerContainter">
-    <swiper catchtap="onSwiperTap" vertical="{{false}}" indicator-dots="true" autoplay="true" interval="5000">
+    <swiper class="topswiper" catchtap="onSwiperTap" vertical="{{false}}" indicator-dots="true" autoplay="true" interval="5000">
       <swiper-item>
           <image mode='aspectFill' src="/images/wx.png" data-postId="3"></image>
       </swiper-item>
@@ -17,7 +17,7 @@
       <text class="searchtext">搜索点什么吧</text>
     </view>
     <view class="searchkeyword bg-row-center" wx:else>
-        <input type="text" class="inputsearch" maxlength='50' placeholder='搜索点什么吧'></input>
+        <input type="text" class="inputsearch" maxlength='50' focus='{{true}}' placeholder='搜索点什么吧'></input>
         <icon type='clear' size='24' class="searchclear" catchtap='clearsearch'></icon>
     </view>
   </view>
@@ -57,37 +57,113 @@
     </view>
   </view>
   
-  <block wx:for="{{[1,2]}}" wx:key="{{index}}">
-    <view class="demand-item">
-      <view class="bg-row">
-        <text class="demand-title">甲方需求标题</text>
-        <text class="demand-price">金额</text>
+  <view wx:if="{{demand[0].checked}}">
+    <block wx:for="{{[1,2]}}" wx:key="{{index}}">
+      <view class="demand-item">
+        <view class="bg-row">
+          <text class="demand-title">甲方需求标题</text>
+          <text class="demand-price">金额</text>
+        </view>
+        <view class="bg-row">
+          <text class="demand-label">甲方需求小标签</text>
+          <text class="demand-time">2018-09-16 00:00:00</text>
+        </view>
+        <view class="demand-content">
+          内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+        </view>
+        <view class="bg-row-left">
+          <image mode='aspectFill' src="/images/new.png" class="demand-bottomimg"></image>
+          <view class="bg-column-left bg-margin-left">
+            <text>甲方名称 (企业加注企业标)</text>
+            <text>甲方名称 (企业加注企业标)</text>
+          </view>
+        </view>
       </view>
-      <view class="bg-row">
-        <text class="demand-label">甲方需求小标签</text>
-        <text class="demand-time">2018-09-16 00:00:00</text>
-      </view>
-      <view class="demand-content">
-        内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
-      </view>
-      <view class="bg-row-left">
-        <image mode='aspectFill' src="/images/new.png" class="demand-bottomimg"></image>
-        <view class="bg-column-left bg-margin-left">
-          <text>甲方名称 (企业加注企业标)</text>
-          <text>甲方名称 (企业加注企业标)</text>
+    </block>
+  </view>
+  <view wx:else>
+    最新
+  </view>
+
+</view>
+
+<view class="messagebox" wx:if="{{index==2}}">
+  <block wx:for="{{[1,2,3]}}" wx:key="{{key}}">
+    <view class="chatbox">
+      <view class="bg-row message-item">
+        <image mode='aspectFill' src="/images/new.png" class="headurl"></image>
+        <view class="bg-column-left message-content-right">
+          <text class="name">笔杆VIP客服助手</text>
+          <view class="bg-row message-content-msg">
+            <text class="msg-left">内容内容内容内容内容内容内容内容内容内容内容</text>
+            <text class="msg-right">置顶</text>
+          </view>
+          <text class="chattime">2小时前</text>
         </view>
       </view>
     </view>
   </block>
-
 </view>
 
-<view class="" wx:if="{{index==2}}">
-  <view>2</view>
-</view>
+<view class="ownbox" wx:if="{{index==3}}">
+  <view class="bg-column topcontainer">
+    <view class="bg-row-left avatarinfo">
+      <image mode='aspectFill' src="/images/new.png" class="avatarimg"></image>
+      <view class="bg-column-left nickbox">
+        <text class="nickname">昵称</text>
+        <text class="getmoney">在金笔杆赚了4000.00元 <text class="share">去炫耀</text></text>
+      </view>
+    </view>
+    <view class="bg-row numinfo">
+      <view class="bg-column">
+        <text>0</text>
+        <text>成交数</text>
+      </view>
+      <view class="bg-column">
+        <text>0</text>
+        <text>好评率</text>
+      </view>
+      <view class="bg-column">
+        <text>0</text>
+        <text>超级赞</text>
+      </view>
+    </view>
+  </view>
 
-<view class="" wx:if="{{index==3}}">
-  <view>3</view>
+  <view class="bottomcontainer">
+    <view class="bg-row-left iconbox">
+      <image mode='aspectFill' src="" class="iconimg"></image>
+      <text>我的接单</text>
+    </view>
+    <view class="bg-row-left iconbox">
+      <image mode='aspectFill' src="" class="iconimg"></image>
+      <text>我的账户</text>
+    </view>
+    <view class="bg-row-left iconbox">
+      <image mode='aspectFill' src="" class="iconimg"></image>
+      <text>我的资料</text>
+    </view>
+    <view class="bg-row-left iconbox">
+      <image mode='aspectFill' src="" class="iconimg"></image>
+      <text>福利中心</text>
+    </view>
+    <view class="bg-row-left iconbox">
+      <image mode='aspectFill' src="" class="iconimg"></image>
+      <text>我的收藏</text>
+    </view>
+    <view class="bg-row-left iconbox">
+      <image mode='aspectFill' src="" class="iconimg"></image>
+      <text>在线客服</text>
+    </view>
+    <view class="bg-row-left iconbox">
+      <image mode='aspectFill' src="" class="iconimg"></image>
+      <text>评价我们</text>
+    </view>
+    <view class="bg-row-left iconbox">
+      <image mode='aspectFill' src="" class="iconimg"></image>
+      <text>设置</text>
+    </view>
+  </view>
 </view>
 
 <view class="bg-fixed-bottom-tab" catchtap='selecttab'>

@@ -1,10 +1,16 @@
 {
   "pages": [
+    "pages/second/index/order/order",
+    "pages/second/index/setting/setting",
     "pages/second/index/index",
+    "pages/second/otherdata/otherdata",
+   
     "pages/second/second",
     "pages/first/info/info",
     "pages/first/company/company",
     "pages/first/first",
+
+    
    
     "pages/second/attch/attch",
     "pages/second/works/works",
