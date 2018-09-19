@@ -1,26 +1,29 @@
 {
   "pages": [
+    "pages/second/index/company/company",
+    "pages/test/test",
+    "pages/second/index/index",
+    
+    "pages/first/company/company",
+    "pages/second/index/search/search",
+   
+    "pages/second/index/service/service",
+    "pages/second/index/owninfo/owninfo",
+    "pages/second/second",
+    "pages/first/first",
+    "pages/first/info/info",
+    "pages/second/index/account/account",
     "pages/second/index/order/order",
     "pages/second/index/setting/setting",
-    "pages/second/index/index",
+   
     "pages/second/otherdata/otherdata",
-   
-    "pages/second/second",
-    "pages/first/info/info",
-    "pages/first/company/company",
-    "pages/first/first",
-
-    
-   
+ 
     "pages/second/attch/attch",
     "pages/second/works/works",
     "pages/second/work/work",
-    
     "pages/second/skill/skill",
-
     "pages/second/add/add",
     "pages/second/edit/edit",
-
     "pages/login/identity/identity",
     "pages/login/login"
   ],

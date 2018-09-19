@@ -1,3 +1,5 @@
+<import src="../../template/search/search.wxml" />
+<import src="../../template/demand/demand.wxml"/>
 <view class="indexContainer" wx:if="{{index==1}}">
   <view class="bannerContainter">
     <swiper class="topswiper" catchtap="onSwiperTap" vertical="{{false}}" indicator-dots="true" autoplay="true" interval="5000">
@@ -16,10 +18,11 @@
       <icon type='search' size='18'></icon>
       <text class="searchtext">搜索点什么吧</text>
     </view>
-    <view class="searchkeyword bg-row-center" wx:else>
+    <!-- <view class="searchkeyword bg-row-center" wx:else>
         <input type="text" class="inputsearch" maxlength='50' focus='{{true}}' placeholder='搜索点什么吧'></input>
         <icon type='clear' size='24' class="searchclear" catchtap='clearsearch'></icon>
-    </view>
+    </view> -->
+
   </view>
 
   <view class="newcontainer">
@@ -58,27 +61,8 @@
   </view>
   
   <view wx:if="{{demand[0].checked}}">
-    <block wx:for="{{[1,2]}}" wx:key="{{index}}">
-      <view class="demand-item">
-        <view class="bg-row">
-          <text class="demand-title">甲方需求标题</text>
-          <text class="demand-price">金额</text>
-        </view>
-        <view class="bg-row">
-          <text class="demand-label">甲方需求小标签</text>
-          <text class="demand-time">2018-09-16 00:00:00</text>
-        </view>
-        <view class="demand-content">
-          内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
-        </view>
-        <view class="bg-row-left">
-          <image mode='aspectFill' src="/images/new.png" class="demand-bottomimg"></image>
-          <view class="bg-column-left bg-margin-left">
-            <text>甲方名称 (企业加注企业标)</text>
-            <text>甲方名称 (企业加注企业标)</text>
-          </view>
-        </view>
-      </view>
+    <block wx:for="{{postList}}" wx:for-item="item" wx:key="{{index}}">
+      <template is="demand" data="{{...item}}"/>
     </block>
   </view>
   <view wx:else>
@@ -174,3 +158,5 @@
   </text>
   <text class="tab-item3 {{index==3?'tab-active':''}}" data-id="3">我的</text>
 </view>
+
+<template is="search" data="{{search,sflag}}" catchtap='clearsearch'/>

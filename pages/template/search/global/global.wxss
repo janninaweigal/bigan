@@ -1,0 +1,29 @@
+.globalsearch{
+  background-color:#fff;
+  padding:10px 0px;
+}
+.global-search-middle{
+  background-color:#F2F2F2;
+  color:#000;
+   padding:5px 20px;
+   border-radius:30px;
+}
+.searchinput{
+  margin-left:15px;
+}
+
+.secondsearch{
+  padding:5px 15px 15px 20px;
+  background-color:#fff;
+  color:#000;
+}
+.selectbox{
+  padding-left:2px;
+  padding-right:2px;
+  padding-bottom:2px;
+}
+.selectbox .selectimg{
+  width:20px;
+  height:20px;
+  margin-left:5px;
+}

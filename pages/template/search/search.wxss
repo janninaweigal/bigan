@@ -1,0 +1,53 @@
+#search{
+  width:100%;
+  height:100%;
+  position:fixed;
+  z-index:999;
+  background-color:#F2F2F2;
+  top:0px;
+  left:0px;
+}
+.searchcontainer{
+    margin-top:10px;
+  margin-bottom:30px;
+}
+.searchbox{
+  background-color:#fff;
+  color:#000;
+  padding:5px 20px;
+  border-radius:30px;
+}
+.searchinput{
+  margin-left:15px;
+}
+.searchtext{
+  margin-left:15px;
+  font-size:16px;
+}
+
+.keywordbox{
+  margin-top:15px;
+  margin-bottom:20px;
+  box-sizing:border-box;
+  padding:0px 5px;
+}
+.keyword{
+  display:inline-block;
+  font-weight:bolder;
+  font-family:"STHeiti";
+  font-size:16px;
+  margin-left:10px;
+  margin-bottom:10px;
+}
+.search-demandbox{
+  flex-wrap:wrap;
+}
+.search-demandbox text{
+  display:inline-block;
+  padding:2px 20px;
+  background-color:#fff;
+  color:#000;
+  margin-left:10px;
+  margin-bottom:10px;
+  border-radius:25px;
+}

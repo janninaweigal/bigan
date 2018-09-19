@@ -1,3 +1,7 @@
+@import "../../template/search/search.wxss";
+page{
+  position: relative;
+}
 .indexContainer{
   width:100%;
   margin-bottom:55px;

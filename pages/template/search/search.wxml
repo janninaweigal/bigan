@@ -1,0 +1,21 @@
+<template name="search">
+  <view id="search" wx:if="{{!sflag}}">
+    <view class="bg-row-center searchcontainer">
+      <view class="bg-row-left searchbox">
+        <icon type='search' size="18"></icon>
+        <input type="text" placeholder='全局搜索框' class="searchinput"></input>
+      </view>
+      <text class="searchtext" catchtap='clearsearch'>取消</text>
+    </view>
+    <block wx:for="{{search}}" wx:key="{{index}}">
+      <view class="keywordbox">
+        <view class="keyword">{{item.keyword}}</view>
+        <view class="bg-row-left search-demandbox">
+            <block wx:for="{{item.label}}" wx:for-item="itemName" wx:key="{{index}}">
+              <text>{{itemName}}</text>
+            </block>
+        </view>
+      </view>
+    </block>    
+  </view>
+</template>
