@@ -1,0 +1,39 @@
+ <view class="container1">
+  <scroll-view class="messageSV" scroll-y="true" scroll-into-view="{{'red'+mesArray.length}}" scroll-top="0">
+    <block wx:for="{{mesArray}}" wx:key="{{index}}">
+      <template is="{{item.mesType}}" data="{{mes:item.mesitem.mes,userInfo:item.mesitem.userInfo,index}}" />
+    </block>
+  </scroll-view>
+
+  <view class="bottom-line">
+    <input type="text" value="{{inputValue}}" bindinput="bindKeyInput"></input>
+    <button type="primary" bindgetuserinfo="sendMes" open-type="getUserInfo">发送</button>
+  </view>
+
+</view>
+
+<template name="myItem">
+  <view class="myMessage"  id="{{'#red'+(index+1)}}">
+    <view class="myview">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl!==null&&userInfo.avatarUrl!==undefined?userInfo.avatarUrl:'/images/avatar/1.png'}}" background-size="cover"></image>
+      <view class="m">
+        <text class="mes">{{mes}}</text>
+        <view class="arrow"></view>
+      </view>
+    </view>
+    <view class="yk"></view>
+  </view>
+</template>
+
+<template name="youItem">
+  <view class="youMessage" id="{{'#red'+(index+1)}}">
+    <view class="youview">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <view class="m">
+        <text class="mes">{{mes}}</text>
+        <view class="arrow"></view>
+      </view>
+    </view>
+    <view class="yk"></view>
+  </view>
+</template> 

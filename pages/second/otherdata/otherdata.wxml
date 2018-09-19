@@ -1,0 +1,83 @@
+<view class="dataContainer">
+  <view class="nick-num">
+    <image mode='aspectFill' src="/images/iqiyi.png" class="avatarimg"></image>
+    <view class="bg-column">
+      <text>0</text>
+      <text>好评率</text>
+    </view>
+    <view class="bg-column">
+      <text>0</text>
+      <text>回复率</text>
+    </view>
+    <view class="bg-column">
+      <text>0</text>
+      <text>超级赞</text>
+    </view>
+    <view class="bg-column">
+      <text>0</text>
+      <text>接单量</text>
+    </view>
+  </view>
+
+  <view class="aptitude">
+    <text class="badge-icon">已认证</text>
+    <text class="badge-icon">国企经理</text>
+    <text class="badge-icon">世界500强企业</text>
+    <text class="badge-icon">已认证</text>
+    <text class="badge-icon">国企经理</text>
+    <text class="badge-icon">世界500强企业</text>
+  </view>
+
+  <view class="authbox">
+    <block wx:for="{{auth}}">
+      <view class="bg-row auth-item">
+        <view class="bg-row-left">
+          <image mode='aspectFill' src="{{item.src}}" class="authimg"></image>
+          <text class="margin-auto">{{item.name}}</text>
+        </view>
+        <view class="bg-row-right">
+          <text class="margin-auto authtext">{{item.auth?'已认证':'未认证'}}</text>
+          <image mode='aspectFit' class="arrow-right" src="/images/arrow-right.png"></image>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="bg-row demandcontainer" catchtap='demandtap'>
+    <block wx:for="{{demand}}" wx:key="{{index}}">
+      <text class="demand-tab-right {{item.checked?'demand-tab-active':''}}" data-text="{{item.text}}">{{item.text}}</text>
+    </block>
+  </view>
+
+  <view wx:if="{{demand[0].checked}}">
+    <block wx:for="{{[1,2]}}" wx:key="{{index}}">
+      <view class="demand-item">
+        <view class="bg-row">
+          <text class="demand-title">甲方需求标题</text>
+          <text class="demand-price">金额</text>
+        </view>
+        <view class="bg-row">
+          <text class="demand-label">甲方需求小标签</text>
+          <text class="demand-time">2018-09-16 00:00:00</text>
+        </view>
+        <view class="demand-content">
+          内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+        </view>
+        <view class="bg-row-left">
+          <image mode='aspectFill' src="/images/new.png" class="demand-bottomimg"></image>
+          <view class="bg-column-left bg-margin-left">
+            <text>甲方名称 (企业加注企业标)</text>
+            <text>甲方名称 (企业加注企业标)</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view wx:if="{{demand[1].checked}}">
+    合作伙伴
+  </view>
+  <view wx:if="{{demand[2].checked}}">
+    评价
+  </view>
+
+</view>

@@ -1,0 +1,6 @@
+<import src="../../../template/search/global/global.wxml" />
+<import src="../../../template/demand/demand.wxml"/>
+<template is="global" data="{{search,array,array1,index,index1}}"/>
+<block wx:for="{{postList}}" wx:key="{{index}}">
+  <template is="demand" data="{{...item}}"/>
+</block>

@@ -1,3 +1,7 @@
+@import "../../template/search/search.wxss";
+page{
+  position: relative;
+}
 .indexContainer{
   width:100%;
   margin-bottom:55px;
@@ -5,8 +9,11 @@
 .bannerContainter{
   width:100%;
   height:300rpx;
-  background-color:#D7D7D7;
   position:relative;
+}
+.bannerContainter .topswiper{
+  width:100%;
+  height:300rpx;
 }
 .bannerContainter image{
   width:100%;
@@ -80,7 +87,7 @@
   border-right:none;
 }
 /* 需求 */
-.demandtab{
+/* .demandtab{
   background-color:#fff;
   width:100%;
   padding:0px 15px;
@@ -99,9 +106,9 @@
 .demandbox .demand-tab-active{
   font-weight:bolder;
    border-bottom:1px solid #000;
-}
+} */
 /* 甲方需求 子容器 */
-.demand-item{
+/* .demand-item{
   width:100%;
   margin-bottom:10px;
   padding:15px 10px;
@@ -114,9 +121,9 @@
 }
 .bg-margin-left{
   margin-left:15px;
-}
+} */
 /* 需求字体 */
-.demand-item .demand-title{
+/* .demand-item .demand-title{
   font-size:18px;
 }
 .demand-item .demand-price{
@@ -138,4 +145,112 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
+} */
+/* 消息 */
+.chatbox{
+  width:100%;
+  padding-left:15px;
+  padding-right:10px;
+  box-sizing:border-box;
+  background-color: #fff;
+  border-bottom:1px solid #bbb;
+}
+.chatbox:last-child{
+  border-bottom:none;
+}
+.chatbox .message-item{
+  width:100%;
+  padding-top:10px;
+  padding-bottom:5px;
+  
+}
+.chatbox .message-item .name{
+  font-size:16px;
+  font-weight:bold;
+}
+.chatbox .headurl{
+  width:40px;
+  height:40px;
+  border-radius:10px;
+}
+.chatbox .message-content-right{
+  /* border:1px solid red; */
+  margin-left:10px;
+}
+.chatbox .message-content-right .chattime{
+  color:#BBB;
+  font-size:12px;
+}
+.chatbox .message-content-msg{
+  width:100%;
+  color:#BBB;
+  padding:5px 0px;
+}
+.chatbox .message-content-msg .msg-left{
+  width:450rpx;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  overflow:hidden;
+  margin-right:10px;
+}
+.chatbox .message-content-msg .msg-right{
+  white-space: nowrap;
+}
+/* 我的 */
+.ownbox{
+  width:100%;
+  margin-bottom:50px;
+}
+.ownbox .topcontainer{
+  padding:0px 20px;
+  box-sizing:border-box;
+  background-color:#fff;
+}
+.ownbox .bottomcontainer{
+  margin:10px 0px;
+  padding-left:20px;
+  box-sizing:border-box;
+  background-color:#fff;
+}
+.ownbox .bottomcontainer .iconbox{
+  padding:7px 0px;
+  /* border-bottom:1px solid #bbb; */
+}
+/* .ownbox .bottomcontainer .iconbox:last-child{
+  border-bottom:none;
+} */
+.ownbox .bottomcontainer .iconbox .iconimg{
+  width:23px;
+  height:23px;
+  margin-right:15px;
+  border:1px solid #bbb;
+}
+.ownbox .avatarinfo{
+  width:100%;
+  padding:20px 0px;
+  border-bottom:1px solid #bbb;
+}
+.ownbox .avatarinfo .nickbox{
+  margin-left:20px;
+}
+.ownbox .avatarinfo .nickbox .nickname{
+  font-size:18px;
+  font-weight:bold;
+  margin:5px 0px;
+}
+.ownbox .avatarinfo .nickbox .getmoney{
+  font-size:12px;
+  color:#bbb;
+}
+.ownbox .avatarinfo .nickbox .getmoney .share{
+  color:blue;
+}
+.ownbox .avatarimg{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+}
+.ownbox .numinfo{
+  width:100%;
+  padding:10px 0px;
 }

@@ -1,0 +1,2 @@
+<import src="../../../template/account/account.wxml" />
+<template is="account" data="{{...account}}"/>

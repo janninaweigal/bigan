@@ -1,0 +1,10 @@
+<template name="account">
+  <form bindsubmit="formSubmit">
+    <view class="bg-column">
+      <image mode='aspectFit' class="accountimg" src="{{url}}"></image>
+      <text class="accountmoney">¥{{money}}</text>
+    </view>
+    <button formType="submit" class="graybtn rechange">充值</button>
+    <button formType="submit" class="graybtn forward">体现</button>
+  </form>
+</template>

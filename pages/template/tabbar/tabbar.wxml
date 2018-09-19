@@ -1,0 +1,3 @@
+<template name="tabbar">
+  <text class="demand-tab-item {{checked?'demand-tab-active':''}}" data-text="{{text}}">{{text}}</text>
+</template>

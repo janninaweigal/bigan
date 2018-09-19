@@ -1,9 +1,2 @@
-<form bindsubmit="formSubmit">
-  <view class="bg-column-center ownContainer">
-    <image mode='aspectFit' class="attchicon" src=""></image>
-    <text class="attach-text">完善基本信息</text>
-  </view>
-  <view class="bg-column-center linebox">企业认证+</view>
-  <view class="bg-column-center linebox">企业介绍+</view>
-  <button formType="submit" type="primary" class="submitbtn">完 成</button>
-</form>
+<import src="../template/owninfo/owninfo.wxml" />
+<template is="owninfo" data="{{menu}}"/>

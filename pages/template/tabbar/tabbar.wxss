@@ -1,0 +1,15 @@
+.demandcontainer{
+  width:100%;
+  box-sizing:border-box;
+  background-color:#fff;
+  border-bottom:1px solid #bbb;
+}
+.demandcontainer .demand-tab-active{
+  font-weight:bolder;
+  border-bottom:1px solid #000;
+}
+.demand-tab-item{
+  flex-grow: 1;
+  padding:10px 0px;
+  text-align:center;
+}

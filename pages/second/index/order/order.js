@@ -1,35 +1,51 @@
-// pages/second/index/index.js
+// pages/second/index/order/order.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    index:1,
-    demand:[{
-      text:'推荐',
+    tabar:[{
+      text:'全部',
       checked:true
     },
     {
-      text: '最新',
+      text: '待付款',
       checked: false
-    }],
-    search: [
-      {
-        keyword: '搜索历史',
-        label: ['UI', 'VI设计', '企业形象设计', '企业形象设计']
-      },
-      {
-        keyword: '搜索历史1',
-        label: ['UI', 'VI设计', '企业形象设计']
-      },
-      {
-        keyword: '搜索历史2',
-        label: ['UI', 'VI设计', '企业形象设计']
-      }
+    },
+    {
+      text: '交易中',
+      checked: false
+    }, {
+      text: '待评价',
+      checked: false
+    },
+    {
+      text: '退款/申述',
+      checked: false
+    }
     ],
-    sflag:true,
-    postList: [
+    postList:[
+      {
+        title:'甲方需求标题',
+        money:'¥200',
+        label:'标签',
+        publishtime:'2018-09-20 00:00:00',
+        content:'内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+        firstheadimg:'/images/new.png',
+        firstname:'甲方名称 (企业加注企业标)',
+        firstcontent:'甲方内容(企业加注企业标)'
+      },
+      {
+        title: '甲方需求标题',
+        money: '¥200',
+        label: '标签',
+        publishtime: '2018-09-20 00:00:00',
+        content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+        firstheadimg: '/images/new.png',
+        firstname: '甲方名称 (企业加注企业标)',
+        firstcontent: '甲方内容(企业加注企业标)'
+      },
       {
         title: '甲方需求标题',
         money: '¥200',
@@ -52,77 +68,18 @@ Page({
       }
     ]
   },
-  selecttab(e){
-    var that=this;
-    var id=e.target.dataset.id;
-    if(id!=undefined){
-      switch(id){
-        case '1':
-          that.designIndex(1);
-          wx.setNavigationBarTitle({
-            title: '首页'
-          })
-          break;
-        case '2':
-          that.designIndex(2);
-          wx.setNavigationBarTitle({
-            title: '消息'
-          })
-          break;
-        case '3':
-          that.designIndex(3);
-          wx.setNavigationBarTitle({
-            title: '我的'
-          })
-          break;
-        default:
-          console.log("none")
-          break;
+  demandtap(e) {
+    var text = e.target.dataset.text;
+    var demand = this.data.tabar
+    for (var i in demand) {
+      if (demand[i].text == text) {
+        demand[i].checked = true;
+      } else {
+        demand[i].checked = false;
       }
     }
-  },
-  designIndex(param){
     this.setData({
-      index:param
-    })
-  },
-  demandtap(e){
-    var text=e.target.dataset.text;
-    if(text=="推荐"){
-      this.setData({
-        demand: [{
-          text: '推荐',
-          checked: true
-        },
-        {
-          text: '最新',
-          checked: false
-        }]
-      })
-    }else{
-      this.setData({
-        demand: [{
-          text: '推荐',
-          checked: false
-        },
-        {
-          text: '最新',
-          checked: true
-        }]
-      })
-    }
-  },
-  // 清除搜索框
-  appearsearch(){
-    this.setData({
-      sflag: false
-    })
-  },
-  clearsearch(e){
-    console.log(123)
-    console.log(e)
-    this.setData({
-      sflag:true
+      tabar: demand
     })
   },
   /**

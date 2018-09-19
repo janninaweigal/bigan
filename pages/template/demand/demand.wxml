@@ -1,0 +1,22 @@
+<template name="demand">
+  <view class="demand-item">
+    <view class="bg-row">
+      <text class="demand-title">{{title}}</text>
+      <text class="demand-price">{{money}}</text>
+    </view>
+    <view class="bg-row">
+      <text class="demand-label">{{label}}</text>
+      <text class="demand-time">{{publishtime}}</text>
+    </view>
+    <view class="demand-content">
+      {{content}}
+    </view>
+    <view class="bg-row-left">
+      <image mode='aspectFill' src="{{firstheadimg}}" class="demand-bottomimg"></image>
+      <view class="bg-column-left bg-margin-left">
+        <text>{{firstname}}</text>
+        <text>{{firstcontent}}</text>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,34 +1,24 @@
-// pages/second/index/index.js
+// pages/test/test.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    index:1,
-    demand:[{
-      text:'推荐',
-      checked:true
-    },
-    {
-      text: '最新',
-      checked: false
-    }],
     search: [
       {
         keyword: '搜索历史',
-        label: ['UI', 'VI设计', '企业形象设计', '企业形象设计']
-      },
-      {
-        keyword: '搜索历史1',
         label: ['UI', 'VI设计', '企业形象设计']
       },
       {
-        keyword: '搜索历史2',
+        keyword: '搜索历史',
+        label: ['UI', 'VI设计', '企业形象设计']
+      },
+      {
+        keyword: '搜索历史',
         label: ['UI', 'VI设计', '企业形象设计']
       }
     ],
-    sflag:true,
     postList: [
       {
         title: '甲方需求标题',
@@ -49,82 +39,34 @@ Page({
         firstheadimg: '/images/new.png',
         firstname: '甲方名称 (企业加注企业标)',
         firstcontent: '甲方内容(企业加注企业标)'
+      },
+      {
+        title: '甲方需求标题',
+        money: '¥200',
+        label: '标签',
+        publishtime: '2018-09-20 00:00:00',
+        content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+        firstheadimg: '/images/new.png',
+        firstname: '甲方名称 (企业加注企业标)',
+        firstcontent: '甲方内容(企业加注企业标)'
+      },
+      {
+        title: '甲方需求标题',
+        money: '¥200',
+        label: '标签',
+        publishtime: '2018-09-20 00:00:00',
+        content: '内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容',
+        firstheadimg: '/images/new.png',
+        firstname: '甲方名称 (企业加注企业标)',
+        firstcontent: '甲方内容(企业加注企业标)'
       }
-    ]
+    ],
+    array: ['全部', '中国', '巴西', '日本'],
+    index: 0,
+    array1: ['综合排序', '中国', '巴西', '日本'],
+    index1: 0,
   },
-  selecttab(e){
-    var that=this;
-    var id=e.target.dataset.id;
-    if(id!=undefined){
-      switch(id){
-        case '1':
-          that.designIndex(1);
-          wx.setNavigationBarTitle({
-            title: '首页'
-          })
-          break;
-        case '2':
-          that.designIndex(2);
-          wx.setNavigationBarTitle({
-            title: '消息'
-          })
-          break;
-        case '3':
-          that.designIndex(3);
-          wx.setNavigationBarTitle({
-            title: '我的'
-          })
-          break;
-        default:
-          console.log("none")
-          break;
-      }
-    }
-  },
-  designIndex(param){
-    this.setData({
-      index:param
-    })
-  },
-  demandtap(e){
-    var text=e.target.dataset.text;
-    if(text=="推荐"){
-      this.setData({
-        demand: [{
-          text: '推荐',
-          checked: true
-        },
-        {
-          text: '最新',
-          checked: false
-        }]
-      })
-    }else{
-      this.setData({
-        demand: [{
-          text: '推荐',
-          checked: false
-        },
-        {
-          text: '最新',
-          checked: true
-        }]
-      })
-    }
-  },
-  // 清除搜索框
-  appearsearch(){
-    this.setData({
-      sflag: false
-    })
-  },
-  clearsearch(e){
-    console.log(123)
-    console.log(e)
-    this.setData({
-      sflag:true
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -138,7 +80,20 @@ Page({
   onReady: function () {
 
   },
-
+  bindPickerChange: function (e) {
+    console.log(e)
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      index: e.detail.value
+    })
+  },
+  bindPickerChange1: function (e) {
+    console.log(e)
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      index1: e.detail.value
+    })
+  },
   /**
    * 生命周期函数--监听页面显示
    */

@@ -1,0 +1,28 @@
+.accountimg{
+  width:115px;
+  height:115px;
+  border-radius:50%;
+  border:1px solid #bbb;
+  margin-top:35px;
+  margin-bottom:20px;
+}
+.accountmoney{
+  font-size:18px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+.graybtn{
+  margin:15px 15px;
+  box-sizing:border-box;
+  border-radius:10px;
+  font-size:35rpx;
+}
+.rechange{
+  background-color:#868686;
+  color:#fff;
+}
+.forward{
+  color:#000;
+  background-color:#AEAEAE;
+
+}

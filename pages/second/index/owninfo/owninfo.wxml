@@ -1,0 +1,2 @@
+<import src="../../../template/owninfo/owninfo.wxml" />
+<template is="owninfo" data="{{menu}}"/>

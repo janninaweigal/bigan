@@ -1,0 +1,28 @@
+<template name="global">
+  <view class="bg-row-center globalsearch">
+    <view class="bg-row global-search-middle">
+      <icon type="search" size="18"></icon>
+      <input type="text" class="searchinput" placeholder='全局搜索框'></input>
+    </view>
+  </view>
+  <view class="bg-row secondsearch">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="bg-row selectbox">
+        <text>{{array[index]}}</text>
+        <image mode='aspectFill' src="/images/select.png" class="selectimg"></image>
+      </view>
+    </picker>
+    <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}">
+      <view class="bg-row selectbox">
+        <text>{{array1[index1]}}</text>
+        <image mode='aspectFill' src="/images/select.png" class="selectimg"></image>
+      </view>
+    </picker>
+    <view>
+      <text>信用优先</text>
+    </view>
+  </view>
+  <block wx:for="{{postList}}" wx:for-item="item" wx:key="{{index}}">
+    <template is="demand" data="{{...item}}"/>
+  </block>
+</template>

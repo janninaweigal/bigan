@@ -1,0 +1,40 @@
+<view class="setting">
+  <view class="bg-row topcontainer">
+    <view class="bg-row">
+      <image mode='aspectFit' class="biganurl" src=""></image>
+      <text class="bg-top-text">笔杆昵称</text>
+    </view>
+    <image mode='aspectFit' class="arrow-right" src="/images/arrow-right.png"></image>
+  </view>
+
+  <view class="linecontainer">
+    <view class="bg-row line-row">
+      <text>绑定手机号</text>
+      <image mode='aspectFit' class="arrow-right" src="/images/arrow-right.png"></image>
+    </view>
+    <view class="bg-row line-row">
+      <text>修改密码</text>
+      <image mode='aspectFit' class="arrow-right" src="/images/arrow-right.png"></image>
+    </view>
+  </view>
+
+  <view class="linecontainer">
+    <view class="bg-row line-row">
+      <text>联系客服</text>
+      <image mode='aspectFit' class="arrow-right" src="/images/arrow-right.png"></image>
+    </view>
+  </view>
+
+  <view class="linecontainer">
+    <view class="bg-row line-row">
+      <text>关于我们</text>
+      <image mode='aspectFit' class="arrow-right" src="/images/arrow-right.png"></image>
+    </view>
+    <view class="bg-row line-row">
+      <text>切换身份</text>
+      <image mode='aspectFit' class="arrow-right" src="/images/arrow-right.png"></image>
+    </view>
+  </view>
+
+  <view class="submitbtn sumitradius">退出登录</view>
+</view>
